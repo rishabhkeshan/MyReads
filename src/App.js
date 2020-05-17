@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import BookCategory from './BookCategory';
-import newBook from './newBook';
+import NewBook from './newBook';
 import * as BooksAPI from './BooksAPI';
 import './App.css';
 
@@ -66,9 +66,9 @@ class App extends Component {
       <div>
         <Route exact path='/' render={this.BookStatus}/>
         <Route path='/search' render={({ history }) => (
-          <newBook
+          <NewBook
             addedBooks={this.state.books}
-            onAddingBook={(book, shelf) => {
+            OnAddingBook={(book, shelf) => {
               this.newShelf(book, shelf);
               history.push('/');
             }}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Book from './Book';
 import * as BooksAPI from './BooksAPI';
 
-class newBook extends Component {
+class NewBook extends Component {
   state = {
     booksFound: false,
     query: '',
@@ -61,7 +61,7 @@ class newBook extends Component {
                 <li key={book.id}>
                   <Book
                     book={book}
-                    changeShelf={this.props.onAddingBook} />
+                    changeShelf={this.props.OnAddingBook} />
                 </li>
               ))}
             </ol>
@@ -76,4 +76,4 @@ class newBook extends Component {
   }
 }
 
-export default newBook;
+export default NewBook;
