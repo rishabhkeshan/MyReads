@@ -61,7 +61,7 @@ class NewBook extends Component {
                 <li key={book.id}>
                   <Book
                     book={book}
-                    changeShelf={this.props.OnAddingBook} />
+                    newShelf={this.props.OnAddingBook} />
                 </li>
               ))}
             </ol>
